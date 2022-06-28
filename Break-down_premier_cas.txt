@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital,wght@0,400;0,600;1,200;1,300;1,400&family=Sacramento&family=Titillium+Web:ital,wght@1,300&display=swap');
+*{
+margin: 0;
+padding: 0;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+
+}
+
+body{
+background-color:#FDEFEF ;
+display: flex;
+min-height: 100vh;
+align-items: center;
+
+}
+.pricingtable{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+width: min(1920px,100%);
+}
+.pricingtable-card{
+flex: 1;
+max-width: 360px;
+background-color: #eeae99;
+text-align: center;
+margin: 20px 10px;
+cursor: pointer;
+overflow: hidden;
+color: #ffff;
+transition: .3s linear;
+border-radius: 20px;
+
+    /* border: 0.5px solid #fff; */
+}
+.pricingtable-heading{
+ background-color:#FFB562 ;
+ display: inline-block;
+ padding: 12px 30px;
+ border-radius: 0 0 20px 20px;
+ font-size: 16px;
+ text-transform: uppercase;
+ font-weight:600;
+ transform:.4s linear ;
+ color: #F94C66;
+}
+.pricingtable-card:hover .pricingtable-heading{
+    box-shadow: 0 0 0 35em #3AB0FF;
+}
+.pricingtable-price{
+font-size: 30px;
+font-weight: 500;
+color:#091353;
+margin: 40px;
+transition: .2s linear;
+}
+.pricingtable-price sup,.pricingtable-price span{
+    font-size: 22px;
+    font-weight: 700;
+}
+.pricingtable-card li{
+    font-size: 14px;
+    padding: 10px 0;
+}
+.pricingtable-card:hover,.pricingtable-card:hover .pricingtable-price{
+    color: #FED049;
+    transition: 0.7s;
+}
+.pricingtable-activiation {
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    border: 2px solid #1F1F35;
+    color: #000000;
+    padding: 18px 40px;
+    border-radius: 8px;
+    font-weight: 500;
+     transition: .3s linear;
+
+}
+.pricingtable-activiation:hover{
+    background-color:#FFE7BF;
+    color: #daa410;
+}
+@media screen and (max-width:1100px) {
+    .pricingtable-card{
+        flex: 50%;
+    }
+}
